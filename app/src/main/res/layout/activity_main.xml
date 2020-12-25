@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/tv_device_owner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#e1e1e1"
+            android:gravity="center"
+            android:text="激活"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_clear_owner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#e1e1e1"
+            android:gravity="center"
+            android:text="清除"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_restart_app"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#f2f2f2"
+            android:gravity="center"
+            android:text="重启app" />
+
+        <TextView
+            android:id="@+id/tv_lock"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="锁屏"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_active_admin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="获取生效的admin"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_active_admin_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_lock_screen_info"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="设置锁屏信息"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_change_app_status"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="隐藏淘宝"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_forbid_app"
+            style="@style/normal_btn_style"
+            android:text="禁用app"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <TextView
+            android:id="@+id/tv_wifi_mac"
+            style="@style/normal_btn_style"
+            android:text="获取wifiMac"
+            />
+        <TextView
+            android:id="@+id/tv_change_bar"
+            style="@style/normal_btn_style"
+            android:text="切换statusBar"
+            android:onClick="onClick"
+            />
+        <TextView
+            android:id="@+id/tv_suspended"
+            style="@style/normal_btn_style"
+            android:text="禁用淘宝"
+            android:onClick="onClick"
+            />
+        <TextView
+            android:id="@+id/tv_lock_time"
+            style="@style/normal_btn_style"
+            android:text="时间"
+            android:onClick="onClick"
+            />
+        <TextView
+            android:id="@+id/tv_uninstall"
+            style="@style/normal_btn_style"
+            android:text="禁止卸载"
+            android:onClick="onClick"
+            />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
